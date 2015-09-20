@@ -1,0 +1,10 @@
+@import "../variables";
+.card {
+	border: 1px solid $color1;
+	background-color: $color2;
+	padding: 10px;
+	min-width: 220px;
+	min-height: 220px;
+	text-align: center;
+	display: inline-block;
+}

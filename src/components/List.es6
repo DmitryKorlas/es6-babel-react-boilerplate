@@ -1,10 +1,16 @@
+// Module in es6 style
 import React from 'react';
-class List extends React.Component{
+require('../assets/components/_list.scss');
+class List extends React.Component {
+	handleItemClick(record) {
+		this.props.onSelect(record);
+	}
+
 	render() {
 		var items = this.props.items.map((record, index) => {
-			return <li key={index}>{record.value}</li>
+			return <li key={index} onClick={this.handleItemClick.bind(this, record)}>{record.value}</li>
 		});
-		return <ul>{items}</ul>
+		return <ul className='list'>{items}</ul>
 	}
 }
 

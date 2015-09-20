@@ -1,0 +1,17 @@
+@import "../variables";
+.list {
+	margin: 0;
+	padding: 0;
+	max-width: 300px;
+	border: 1px solid $color2;
+	background-color: $color3;
+	li {
+		list-style: none;
+		padding: 4px 8px;
+		color: $color1;
+		&:hover {
+			color: $color2;
+			cursor: pointer;
+		}
+	}
+}

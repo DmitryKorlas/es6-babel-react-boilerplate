@@ -1,0 +1,21 @@
+@import "../variables";
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.mainLayout {
+	vertical-align: middle;
+	header {
+		padding: 0 25px;
+		border-bottom: 1px solid $color2;
+	}
+	main {
+		padding: 25px;
+	}
+	section {
+		max-width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 20px 10px 20px;
+	}
+}
