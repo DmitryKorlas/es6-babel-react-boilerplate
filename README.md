@@ -19,13 +19,14 @@ Common ideas:
 	then visit localhost:8086
 	
 ##Creating build artifact
-	```sh
-	$ npm run build
-	```
-	then You can find 'build' folder with just created application. 
-	You can check it, just make it available for web server 
-	```sh
-	$ cd build
-	$ python -m SimpleHTTPServer 8082
-	```
-	then visit localhost:8082 to see build of Your application. 
+```sh
+$ npm run build
+```
+then You can find 'build' folder with just created application. 
+
+You can check it, just make it available for web server: 
+```sh
+$ cd build
+$ python -m SimpleHTTPServer 8082
+```
+then visit localhost:8082 to see build of Your application. 
