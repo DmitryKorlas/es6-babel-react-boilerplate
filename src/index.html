@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Application</title>
-	<link rel="stylesheet" href="__build__/main.css" />
-	<script src="__build__/app.js"></script>
+	<link rel="stylesheet" href="/static/main.css?v={%= o.webpack.hash %}" />
+	<script src="/static/app.js?v={%= o.webpack.hash %}"></script>
 </head>
 <body>
+{%= o.htmlWebpackPlugin.options.data.some %}
+hash: {%=o.webpack.hash%}
 <div id="app"></div>
 </body>
 </html>
